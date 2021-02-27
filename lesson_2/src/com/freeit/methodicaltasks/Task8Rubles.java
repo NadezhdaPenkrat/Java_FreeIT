@@ -3,7 +3,7 @@ package com.freeit.methodicaltasks;
 import java.util.Random;
 
 /*
-8) Имеется целове число
+8) Имеется цело число
 (задать с помощью
 Random rand = new Random();
 int x =rand.nextInt()  ).
@@ -11,30 +11,29 @@ int x =rand.nextInt()  ).
 Вывести это число, добавив к
 нему слово «рублей» в правильном падеже.
  */
-public class Task8 {
+public class Task8Rubles {
     public static void main(String[] args) {
         Random rand = new Random();
-        int RUBLES =rand.nextInt(15);
+        int rubles =rand.nextInt(15);
 
-        int x=RUBLES%10;
-        if (RUBLES%100>=10&&RUBLES%100<=15)
-        {
-            System.out.println(RUBLES+ " рублей");
+        int x=rubles%10;
+        if (rubles % 100 >= 10&& rubles % 100 <=15 ) {
+            System.out.println(rubles+ " рублей");
         }
         else
         {
             switch (x)
             {
                 case 1:
-                    System.out.println(RUBLES+ " рубль");
+                    System.out.println(rubles+ " рубль");
                     break;
                 case 2:
                 case 3:
                 case 4:
-                    System.out.println(RUBLES+ " рубля");
+                    System.out.println(rubles+ " рубля");
                     break;
                 default:
-                    System.out.println(RUBLES+ " рублей");
+                    System.out.println(rubles+ " рублей");
             }
         }
     }

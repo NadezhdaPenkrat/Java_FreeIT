@@ -6,13 +6,16 @@ import java.util.Random;
 минимальную оценку, её (их) номера.
  */
 
-public class Task14 {
+public class Task14MaxMin {
     public static void main(String[] args)  {
         Random random = new Random();
+
         int maximum = 0;
         int minimum = 0;
 
         int[] array = new int[10];
+        System.out.println("array"+ array);
+
         for(int i = 0; i < array.length; i++){
             array[i] = random.nextInt(10);
 

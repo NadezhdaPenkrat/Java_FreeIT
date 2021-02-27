@@ -6,7 +6,7 @@ import java.util.Random;
 12) Найдите сумму первых n целых чисел,
 которые делятся на 3.
  */
-public class Task12 {
+public class Task12SumDiv {
     public static void main(String[] args) {
         Random random = new Random();
         int n = random.nextInt(15);

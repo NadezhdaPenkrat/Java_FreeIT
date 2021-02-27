@@ -1,4 +1,7 @@
 package com.freeit.methodicaltasks;
+
+import java.util.Random;
+
 /*
 15) Создать массив, заполнить его
 случайными элементами, распечатать,
@@ -6,9 +9,11 @@ package com.freeit.methodicaltasks;
 при переворачивании нежелательно создавать
 еще один массив).
  */
-public class Task15 {
+public class Task15ArrRandomReverse {
     public static void main(String[] args) {
-        int array[] = new int[5];
+        Random random = new Random();
+        int n = random.nextInt();
+        int[] array = new int[5];
         int i;
         for (i = 0; i < array.length; i++) {
             array[i] = (int) (Math.random() * 10);

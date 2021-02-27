@@ -1,7 +1,5 @@
 package com.freeit.methodicaltasks;
 import static java.lang.System.out;
-
-
 /*
 17) Создать двухмерный квадратный массив, и заполнить его «бабочкой», т.е
 таким образом:
@@ -11,7 +9,7 @@ import static java.lang.System.out;
 0 1 1 1 0
 1 1 1 1 1
  */
-public class Task17 {
+public class Task17ArrayButterfly {
 
     public static void main(String[] args) {
             int arr[][]=new int[5][5];

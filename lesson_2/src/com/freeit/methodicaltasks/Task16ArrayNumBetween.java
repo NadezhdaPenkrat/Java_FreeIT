@@ -7,7 +7,7 @@ import java.util.Random;
 одномерного массива, расположенных между
 минимальным и максимальным значениями.
  */
-public class Task16 {
+public class Task16ArrayNumBetween {
 
     private static final int N = 10;
     private static final int MIN = 1;

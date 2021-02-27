@@ -4,7 +4,7 @@ package com.freeit.methodicaltasks;
 определить является ли это число простым, т.е.
 делится без остатка только на 1 и себя.
  */
-public class Task11 {
+public class Task11NumPrime {
     public static void main(String[] args) {
         int n = 5;
         int i;

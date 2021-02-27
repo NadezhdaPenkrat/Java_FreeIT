@@ -6,9 +6,8 @@ import java.util.Random;
 10) Посчитать факториал числа
 в границах от 10 до 15 (не используя рекурсию).
  */
-public class Task10 {
-    private static int interval;
-    Random random = new Random();
+public class Task10Factorialinterval {
+        Random random = new Random();
     int n = random.nextInt((15 - 10) + 10);
 
     // Evaluate n!
@@ -22,7 +21,7 @@ public class Task10 {
 
     // Simple test program
     public static void main(String[] args) {
-        for (int i = 1; i  <= 15; i++)
+        for (int i = 1; i  <= 15 ; i++)
             System.out.println(factorial(i));
     }
 }

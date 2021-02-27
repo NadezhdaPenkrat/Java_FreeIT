@@ -8,7 +8,7 @@ import java.util.Random;
 чтобы рассчитывалась не сумма, а
 произведение, т.е. факториал числа.
  */
-public class Task9Factorial {
+public class Task9FactorialComposition {
     public static void main(String[] args) {
         Random random = new Random();
         int number = random.nextInt(15);
