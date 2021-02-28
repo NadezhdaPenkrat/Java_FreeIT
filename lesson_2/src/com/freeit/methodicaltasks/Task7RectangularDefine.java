@@ -8,10 +8,10 @@ import java.util.Random;
 public class Task7RectangularDefine {
     public static void main(String[] args) {
         Random random = new Random();
-        int a = 5;
-        int b = 8;
-        int r = 5;
-        if (r * r >= (a * a + b * b) / 4) {
+        int sideA = 5;
+        int sideB = 8;
+        int radius = 5;
+        if (radius * radius >= (sideA * sideA + sideB * sideB) / 4) {
             System.out.println(" Determine. " +
                     "Rectangular hole size completely cover with a round cardboard radius" );
         } else {
