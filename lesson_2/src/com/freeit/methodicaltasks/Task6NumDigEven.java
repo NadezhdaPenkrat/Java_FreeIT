@@ -9,7 +9,7 @@ import java.util.Random;
  */
 public class Task6NumDigEven {
     public static void main(String[] args) {
-        Random random = new Random();
+
         int num = 697;
 
         //number digit

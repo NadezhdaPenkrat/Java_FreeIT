@@ -14,8 +14,6 @@ public class Task16ArrayNumBetween {
     private static final int MAX = 5;
 
     public static void main(String[] args) {
-        Random random = new Random();
-        int n = random.nextInt();
 
         int[] array = createArray(N, MIN, MAX);
         System.out.println("Array: " + Arrays.toString(array));
