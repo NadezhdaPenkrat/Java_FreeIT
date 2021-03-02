@@ -9,11 +9,12 @@ import java.util.Random;
 public class Task5FindPositiveNegative {
     public static void main(String[] args) {
         Random random = new Random();
-        int firstNumber = random.nextInt(1000);
+
+        int firstNumber = (int)  (-1000+ random.nextInt(1000));
         System.out.println(" Дано первое число: " +firstNumber);
-        int secondNumber = random.nextInt(1000);
+        int secondNumber = (int)  (-1000+ random.nextInt(1000));
         System.out.println(" Дано второе число: " +secondNumber);
-        int thirdNumber = random.nextInt(1000);
+        int thirdNumber = (int)  (-1000+ random.nextInt(1000));
         System.out.println(" Дано третье число: " +thirdNumber);
 
         int sum=0;
