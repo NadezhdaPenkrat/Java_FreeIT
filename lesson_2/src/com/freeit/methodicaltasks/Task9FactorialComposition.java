@@ -14,14 +14,10 @@ public class Task9FactorialComposition {
         int number = random.nextInt(15);
         int factor = 1;
         System.out.println(number * factor);
-        int result = 1;
-
-        if (number == 0 || number == 1) {
-            return ;
-        } else {
-            for (int  i = 2; i <= number; i++)
-                result *= i;
-            return ;
+        for (int i = 1; i <= number; i++) {
+            factor = factor * i;
         }
+        System.out.println("= " + factor);
+
     }
 }

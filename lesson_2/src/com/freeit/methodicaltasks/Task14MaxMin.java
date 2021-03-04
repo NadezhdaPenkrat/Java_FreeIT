@@ -1,4 +1,6 @@
 package com.freeit.methodicaltasks;
+
+import java.util.Arrays;
 import java.util.Random;
 /*
 14) Создать массив оценок произвольной длины,
@@ -7,26 +9,32 @@ import java.util.Random;
  */
 
 public class Task14MaxMin {
-    public static void main(String[] args)  {
+    public static void main(String[] args) {
         Random random = new Random();
+        int[] number = new int[10];
+        for (int i = 0; i < number.length; i++) {
+            number[i] = random.nextInt(10);
+        }
+        System.out.println(Arrays.toString(number));
 
-        int maximum = 0;
-        int minimum = 0;
+        int maxNum = number[0];
+        int minNum = number[0];
+        int maxNumIndx = 0;
+        int minNumIndx = 0;
 
-        int[] array = new int[10];
-        System.out.println("array"+ array);
-
-        for(int i = 0; i < array.length; i++){
-            array[i] = random.nextInt(10);
-
-            if(minimum > array[i]){
-                minimum = array[i];
+        for (int i = 0; i < number.length; i++) {
+            if (number[i] > maxNum) {
+                maxNum = number[i];
+                maxNumIndx = i;
             }
-            if (maximum < array[i]){
-                maximum = array[i];
+
+            if (number[i] < minNum) {
+                minNum = number[i];
+                minNumIndx = i;
             }
         }
-        System.out.println("Max"+ maximum );
-        System.out.println("Min"+ minimum);
+
+        System.out.println("maxNum: " + maxNum + "" + " maxNumIndx " + maxNumIndx);
+        System.out.println("minNum: " + minNum + "" + " minNumIndx " + minNumIndx);
     }
 }
