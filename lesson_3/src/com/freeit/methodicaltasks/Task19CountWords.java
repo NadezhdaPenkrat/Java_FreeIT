@@ -1,6 +1,7 @@
 package com.freeit.methodicaltasks;
 
 import java.util.Scanner;
+import java.util.StringTokenizer;
 
 /*
 Имеется строка с текстом.
@@ -12,20 +13,12 @@ import java.util.Scanner;
 но могут и отсутствовать.
 */
 public class Task19CountWords {
-    public static int countWords(String str) {
-        int count = 0;
-        for (int i = 0; i < str.length() - 1; i++) {
-            if (str.charAt(i) == ' ' && str.charAt(i + 1) != ' ') {
-                count++;
-            }
-        }
-        return count;
-    }
-
     public static void main(String[] args) {
+
         Scanner in = new Scanner(System.in);
         System.out.print("Enter a sentence: ");
-        String sentence = in.nextLine();
-        System.out.print("Your sentence has " + countWords(sentence) + " words.");
+        String strTextSentence = in.nextLine();
+        int countWords = new StringTokenizer(strTextSentence, " ,.?/!;:'-()\"").countTokens();
+        System.out.print("Your sentence has " + countWords + " words.");
     }
 }
