@@ -1,6 +1,7 @@
 package com.freeit.methodicaltasks;
 
 import java.util.Scanner;
+import java.util.StringTokenizer;
 
 /*
 Имеется строка с текстом.
@@ -12,15 +13,17 @@ public class Task20LastCharString {
         Scanner scanner = new Scanner(System.in);
         System.out.print("Enter a sentence: ");
         String str = scanner.nextLine();
+        StringTokenizer strTok = new StringTokenizer(str, " ,.?/!;:'-()\"");
+        int count = strTok.countTokens();
+        StringBuilder endLetter = new StringBuilder();
 
-        StringBuilder res = new StringBuilder();
+        for (int i = 0; i < count; i++) {
+            String strWords = strTok.nextToken();
+            endLetter.append(strWords.charAt(strWords.length() - 1));
 
-        String[] words = str.split("\\s+");
-        for (String word : words)
-            res.append(word.toCharArray()[word.length() - 1]);
+            System.out.println("String: " + str);
+            System.out.println("Result: " + "\"" + endLetter + "\" ");
 
-        System.out.println("String: " + str);
-        System.out.println("Result: " + res.toString());
+        }
     }
-
 }
